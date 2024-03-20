@@ -1,0 +1,45 @@
+# import machine and utime to allow control of gpio pins & time based functions
+from machine import Pin, I2C
+from ssd1306 import SSD1306_I2C
+import utime
+
+# set variables width + height in terms of pixles
+WIDTH = 128
+HEIGHT = 64
+# variable "i2c" to initialize the i2c communication b/w the rasberry pi and the disply
+i2c = I2C(0, scl=Pin(17), sda=Pin(16), freq=400000)
+display = SSD1306_I2C(WIDTH, HEIGHT, i2c)
+#"trigger" - set as an output to send an ultrasonic pulse
+trigger = Pin(21, Pin.OUT)
+#"echo" - set an input to recieve the reflected wave
+echo = Pin(20, Pin.IN)
+#define the function "ultra" which tells the sensor when to send a pulse
+def ultra():
+    trigger.low()
+    utime.sleep_us(2)
+    trigger.high()
+    utime.sleep_us(5)
+    trigger.low()
+    #while loop to check echo pin; "signaloff" - when no signal recieved; "signalon" - when signal is recieved
+    while echo.value() == 0:
+        signaloff = utime.ticks_us()
+    while echo.value() == 1:
+        signalon = utime.ticks_us()
+    #"timepassed" to calculate difference in time b/w signalon and signaloff
+    timepassed = signalon - signaloff
+    # Adjust the conversion factor to inches
+    distance = (timepassed * 0.01339) / 2  
+    #make variable 'distance' to one decimal point
+    distance = "{:.1f}".format(distance)
+
+    print(distance + " inches")
+
+    return str(distance)
+
+print("Start")
+#create an endless loop that displays distance in inches to output to display 
+while True:
+    display.text(ultra(), 0, 0)
+    display.show()
+    display.fill(0)
+    utime.sleep(1)
