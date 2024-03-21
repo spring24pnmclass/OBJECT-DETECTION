@@ -18,10 +18,6 @@
 | Task :                                         | Due Date:        | Status:     |
 | ---------------------------------------------- | ---------------- | ----------- |
 | Create first itterartion of python script      | Wednesday (3/18) | Done        |
-| Create UML Sequence Diagram for interactions   | Wednesday (3/13) | Done        |
-| Design website mockups on Figma                | Wednesday (3/13) | Done        |
-| Distribute pages                               | Wednesday (3/13) | In Progress |
-| Create ReactJS Application                     | Friday    (3/15) | In Progress |
 
 ## To Do <a name="to do"></a>
 
