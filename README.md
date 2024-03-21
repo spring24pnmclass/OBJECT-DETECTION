@@ -2,9 +2,8 @@
 # Table of Contents
 1. [Team Members](#team-members)
 2. [Current Tasks](#current-tasks)
-3. [Libraries](#libraries)
-4. [Resources](#resources)
-5. [Git Branching](#git-branching)
+3. [Resources](#resources)
+4. [Git Branching](#git-branching)
 
 ## Team Members <a name="team-members"></a>
 
@@ -24,7 +23,7 @@
 | Distribute pages                               | Wednesday (3/13) | In Progress |
 | Create ReactJS Application                     | Friday    (3/15) | In Progress |
 
-## To DO <a name="to do"></a>
+## To Do <a name="to do"></a>
 
 | Task :                                                         | Due Date:        | Status:     |
 | -------------------------------------------------              | ---------------- | ----------- |
