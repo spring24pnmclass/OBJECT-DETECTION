@@ -29,11 +29,7 @@
 | Task :                                                         | Due Date:        | Status:     |
 | -------------------------------------------------              | ---------------- | ----------- |
 | Learn Linux/Github                                             | Wednesday (3/20) | Done        |
-| Assist  Electronics team in understanding abstractions/methods
-
-## Libraries <a name="libraries"></a>
-
-- [React](https://react.dev/)
+| Assist Electronics team in understanding abstractions/methods
 
 ## Resources <a name="resources"></a>
 - [React Set-Up Tutorial](https://www.youtube.com/watch?v=Kum8fPPrt-E&t=319s)
