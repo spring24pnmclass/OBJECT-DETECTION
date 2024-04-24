@@ -9,7 +9,6 @@
 
 - Duy Dang
 - Michael Hamaty
-- Javraj Sra
 - Albert Chan
 - Atish Kumar
 
@@ -17,7 +16,7 @@
 
 | Task :                                         | Due Date:        | Status:     |
 | ---------------------------------------------- | ---------------- | ----------- |
-| Create first itterartion of python script      | Wednesday (3/18) | Done        |
+| Create first iteration of python script      | Wednesday (3/18) | Done        |
 
 ## To Do <a name="to do"></a>
 
